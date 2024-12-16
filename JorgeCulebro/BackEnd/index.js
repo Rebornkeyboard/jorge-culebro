@@ -12,6 +12,7 @@ const app = express();
 app.use(express.json());
 //cors init
 app.use(cors({
+  //origin set to '*' for dev only
   origin: "*",
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true,

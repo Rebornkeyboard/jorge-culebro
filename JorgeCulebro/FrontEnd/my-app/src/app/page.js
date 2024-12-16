@@ -6,6 +6,7 @@ export default function Home() {
   //router for navigation
   const router = useRouter(); 
   const handleNavigation = () => {
+    
     router.push("/catalog");
   };
 

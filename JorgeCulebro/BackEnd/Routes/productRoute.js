@@ -10,7 +10,7 @@ import {
 
 const router = express.Router();
 
-//routes
+//routes for product
 router.post('/create', createProduct);
 router.get('/read/:id', getProduct);
 router.put('/update/:id', updateProduct);

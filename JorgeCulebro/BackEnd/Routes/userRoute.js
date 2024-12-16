@@ -7,10 +7,9 @@ import {
   updateUser,
   deleteUser,
 } from '../Controllers/userController.js';
-
 const router = express.Router();
 
-//routes
+//routes for user
 router.post('/create', createUser);
 router.get('/read/:id', getUser);
 router.put('/update/:id', updateUser);

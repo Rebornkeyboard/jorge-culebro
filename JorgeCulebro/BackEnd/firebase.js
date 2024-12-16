@@ -1,3 +1,4 @@
+
 import { initializeApp } from 'firebase/app';
 import config from './config.js';
 //get firebase config

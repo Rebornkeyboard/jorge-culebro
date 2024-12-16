@@ -1,0 +1,73 @@
+{
+    "rateRequest": {
+      "origin": {
+        "name": "Alex",
+        "company": "envia",
+        "email": "noreply@envia.com",
+        "phone": "8110000ewdased000",
+        "street": "shreeji sadan 24 bhandarkar rd",
+        "number": "opposite matunga kabutar khana",
+        "district": "",
+        "city": "Monterrey",
+        "state": "NL",
+        "category": 1,
+        "country": "MX",
+        "postalCode": "66236",
+        "reference": "",
+        "coordinates": {
+          "latitude": "19.027686",
+          "longitude": "72.853462"
+        }
+      },
+      "destination": {
+        "name": "{{name}}",
+        "company": "{{company}}",
+        "email": "",
+        "phone": "8088123987",
+        "street": "{{street}}",
+        "number": "123",
+        "district": "",
+        "city": "{{city}}",
+        "state": "NL",
+        "category": 1,
+        "country": "MX",
+        "postalCode": "{{postalCode}}",
+        "reference": "",
+        "coordinates": {
+          "latitude": "28.578938",
+          "longitude": "77.165053"
+        }
+      },
+      "packages": [
+        {
+          "content": "{{content}}",
+          "boxCode": "",
+          "amount": 1,
+          "type": "box",
+          "weight": 1,
+          "insurance": 0,
+          "declaredValue": 0,
+          "weightUnit": "KG",
+          "lengthUnit": "CM",
+          "dimensions": {
+            "length": "{{length}}",
+            "width": "{{width}}",
+            "height": "{{height}}"
+          }
+        }
+      ],
+      "shipment": {
+        "carrier": "fedex",
+        "type": 1
+      },
+      "settings": {
+        "printFormat": "PDF",
+        "printSize": "STOCK_4X6",
+        "currency": "MXN",
+        "cashOnDelivery": "1000.00",
+        "comments": ""
+      },
+      "additionalServices": []
+    }
+  }
+  

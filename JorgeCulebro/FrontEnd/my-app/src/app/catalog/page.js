@@ -31,7 +31,13 @@ export default function Dashboard() {
 
   //loading waiting for response
   if (loading) {
-    return <div className="text-center text-gray-600">Loading products...</div>;
+    return  <div className="flex justify-center items-center h-screen min-h-screen bg-gray-100 p-6">
+              <div className="relative inline-flex">
+                <div className="w-8 h-8 bg-blue-500 rounded-full"></div>
+                <div className="w-8 h-8 bg-blue-500 rounded-full absolute top-0 left-0 animate-ping"></div>
+                <div className="w-8 h-8 bg-blue-500 rounded-full absolute top-0 left-0 animate-pulse"></div>
+              </div>
+            </div>;
   }
 
   return (
@@ -57,7 +63,7 @@ export default function Dashboard() {
               <div className="mt-4 flex-1">
                 <h2 className="text-lg font-bold text-gray-800">{product.name}</h2>
                 <p className="text-gray-600 text-sm mt-2">
-                  Dimensions: {product.height}m x {product.length}m x {product.width}m
+                  Dimensions: {product.height}cm x {product.length}cm x {product.width}cm
                 </p>
               </div>
             </div>

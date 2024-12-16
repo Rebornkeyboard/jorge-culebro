@@ -11,8 +11,10 @@ export default function LoginPage({onNavigate}) {
     try {
       //login request to API
       const response = await axios.get(`http://localhost:3000/api/users/auth/${userName}/${pass}`);
+      //save user id
+      localStorage.setItem('userID', response.data.id);
       //save token from server
-      localStorage.setItem('token', response.token);
+      localStorage.setItem('token', response.data.token);
       //show dashboard after login
       onNavigate("/dashboard")
     } catch (err) {
@@ -32,7 +34,7 @@ export default function LoginPage({onNavigate}) {
           />
         </div>
       
-      <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+      <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow">
           <h2 className="text-center text-2xl/9 font-bold tracking-tight text-gray-900">
             Sign in to your account
           </h2>
